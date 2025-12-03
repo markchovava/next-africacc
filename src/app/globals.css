@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  
+  #top__links path{
+    @apply text-slate-800;
+  }
+
+  .btn__form {
+    @apply bg-gradient-to-br from-yellow-400 to-yellow-800 hover:bg-gradient-to-tr hover:from-yellow-400 hover:to-yellow-800 hover:drop-shadow-lg transition-all ease-in-out duration-200 rounded-2xl text-white;
+  }
+
+  .btn__primary {
+    @apply px-[4rem] py-5 text-white rounded-xl transition-all ease-in-out bg-gradient-to-br from-yellow-300 to-yellow-800 hover:to-yellow-400 hover:from-yellow-900 hover:drop-shadow-lg;
+  }
+
+  /* DISPLAY QUILL DATA */
+  .article p{
+    @apply mb-2;
+  }
+  .article ul{
+    @apply list-disc ml-6 mb-2 ;
+  }
+  .article ul li{
+    @apply mb-1 leading-tight;
+  }
+  .article i{
+    @apply italic;
+  }
+  .article u{
+    @apply underline;
+  }
+  .article b, .article strong{
+    @apply font-semibold;
+  }
+  .article strong{
+    @apply font-medium;
+  }
+
+}
+
+/* SCROLL BAR WIDTH & COLOR */
+.scroll__width::-webkit-scrollbar {
+  width: 0.5em;
+}
+.scroll__width::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.scroll__width::-webkit-scrollbar-thumb {
+  background-color: slategrey;
+  outline: 1px solid slategrey;
+}
+
+/* MAP */
+#africa__map path{
+  fill: #ffa500;
+}
+#africa__map path.muted{
+  fill: #ffa500;
+}
+#africa__map path:hover{
+  fill: green;
+}
+
+/* SWIPER */
+.swiper-button-next,
+.swiper-button-prev {
+    /* background-color: white;
+    background-color: rgba(255, 255, 255, 0.7); */
+    right:10px;
+    padding: 30px;
+    border-radius: 25%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: white !important;
+    fill: white !important;
+    stroke: white !important;
+}
+.swiper-pagination-bullet {
+    background-color: lightgray !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+}
+
+
+
