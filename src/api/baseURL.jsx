@@ -1,1 +1,1 @@
-export const baseURL = 'https://admin.africacapitalclub.com/';
+export const baseURL = 'http://africacc.fldesigners.co.zw';
